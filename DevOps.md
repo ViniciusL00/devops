@@ -30,11 +30,6 @@
 
 ---
 
-**Dica do dia:**  
-DevOps não é só ferramentas, é mindset. Aprenda a pensar em automação, colaboração e feedback constante. Só assim você vai virar fera.
-
----
-
 # 🧠 Revisão de Aula: Preparando o Ambiente DevOps
 
 ## ✅ O que aprendi
