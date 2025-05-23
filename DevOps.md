@@ -124,7 +124,7 @@ Depois da instalação:
 
 # 🧠 Revisão Compacta: Distros Linux Mais Comuns
 
-Conheça as distribuições Linux mais populares e suas principais características 👇
+Conhecendo as distribuições Linux mais populares e suas principais características 👇
 
 ---
 
