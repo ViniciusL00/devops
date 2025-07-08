@@ -1,102 +1,103 @@
-# 🚀 Revisão de Aula: Introdução a DevOps
+# 🚀 Módulo 1: Introdução a DevOps
 
-## O que você vai aprender
+## 🤝 1. A Filosofia DevOps
 
-### 1. 🤝 Compreender a abordagem DevOps
-- Entender a filosofia que une Desenvolvimento (Dev) e Operações (Ops)
-- Focar em integração contínua, entrega contínua e colaboração entre times
-- Automatizar para acelerar entregas e aumentar qualidade
-
-### 2. 🐧 Explorar o Linux
-- Conhecer comandos básicos do terminal
-- Navegar pelo sistema de arquivos
-- Gerenciar permissões e usuários
-- Entender processos e gerenciamento de serviços
-
-### 3. 🤖 Automatizar Processos com ShellScript
-- Escrever scripts para automatizar tarefas repetitivas
-- Usar variáveis, loops e condicionais no Shell
-- Manipular arquivos e comandos do sistema via script
-
-### 4. 🌐 Instalar e Monitorar um Servidor Web
-- Instalar servidores web (ex: Apache, Nginx)
-- Configurar o servidor para servir páginas estáticas/dinâmicas
-- Monitorar logs e status do servidor para garantir estabilidade
-
-### 5. ⏰ Agendar Execução de Tarefas
-- Usar `cron` para agendar scripts e comandos
-- Configurar horários e frequência de execução
-- Verificar histórico e status das tarefas agendadas
+- Une **Desenvolvimento (Dev)** e **Operações (Ops)** em uma única mentalidade.
+- Prioriza:
+  - **Integração Contínua (CI)**
+  - **Entrega Contínua (CD)**
+  - **Colaboração constante entre os times**
+- Automatiza processos para **acelerar entregas** e **reduzir erros**.
+- Visa melhorar a **qualidade, velocidade e confiabilidade** do software. 🏗️💡
 
 ---
 
-# 🧠 Revisão de Aula: Preparando o Ambiente DevOps
+## 🐧 2. Primeiros Passos com Linux
 
-## ✅ O que aprendi
-
-### 🖥️ 1. Instalar a Virtual Machine
-- Baixei e instalei o **Oracle VirtualBox** (💾)
-- Entendi como criar e gerenciar VMs
-
-### 🐧 2. Baixar o Ubuntu Server LTS
-- Baixei a imagem ISO do **Ubuntu Server LTS** 📥
-- Pronto para simular ambientes reais de servidor
-
----
-
-**Nota rápida:**  
-Essa estrutura com VirtualBox + Ubuntu Server é a base pra testar comandos Linux, ShellScript e simular servidores reais. 🛠️
-
-# 🧠 Revisão de Aula: Configurando Ambiente Linux Virtual
-
-## ✅ O que aprendi
-
-### 🐧 1. Baixar o Ubuntu Server 24.04.2 LTS
-- Baixei a versão mais recente e estável do Ubuntu Server  
-- Ideal para treinar comandos Linux e ambiente de servidor
-
-### 🧰 2. Configurar o Oracle VirtualBox
-- Ajustei as configurações da VM (RAM, disco, rede)  
-- Aprendi a preparar o ambiente virtual para rodar o Linux
-
-### 💻 3. Criar uma Máquina Virtual Linux
-- Instalei o Ubuntu Server dentro da VM  
-- Sistema operacional funcionando 100% de forma isolada
+- Aprendi comandos essenciais do terminal:
+  - `ls`, `cd`, `pwd`, `cp`, `mv`, `rm`...
+- Naveguei pelo **sistema de arquivos Linux** (estrutura em árvore).
+- Gerenciei:
+  - **Permissões de arquivos**
+  - **Usuários e grupos**
+  - **Processos ativos** com `ps`, `top`, `kill`, etc.
+- Mexi com serviços e demonstrei noções básicas de administração. 👨‍💻🔧
 
 ---
 
-### 🧩 **Resumo**
-Aprendi a **criar e configurar um ambiente Linux virtual** usando o VirtualBox + Ubuntu Server. Agora tenho uma base segura pra treinar sem medo de quebrar nada! 🔧🔥
+## 🤖 3. ShellScript: Automatizando Tudo!
+
+- Escrevi **scripts** para automatizar tarefas rotineiras.
+- Usei:
+  - **Variáveis**
+  - **Condicionais (`if`, `else`)**
+  - **Loops (`for`, `while`)**
+- Manipulei arquivos e usei comandos dentro dos scripts.
+- Ferramenta poderosa pra economizar tempo e padronizar processos. ⏱️📜
 
 ---
 
-# 🧠 Revisão de Aula: Usar Ubuntu no Windows 11 (sem VM)
+## 🌐 4. Instalar e Monitorar um Servidor Web
 
-## ✅ O que é WSL?
-WSL (Windows Subsystem for Linux) permite rodar distribuições Linux como o Ubuntu **diretamente no Windows**, sem precisar de máquina virtual ou dual boot. É leve, rápido e nativo! ⚡🐧
+- Instalei servidores como **Apache** e **Nginx**.
+- Configurei para servir:
+  - **Páginas estáticas (HTML)**
+  - **Páginas dinâmicas (com backend)**
+- Monitorei:
+  - **Logs** com `tail -f`
+  - **Status** com `systemctl`, `service`, etc.
+- Foquei em manter o servidor **estável e seguro**. 🔒🌍
 
 ---
 
-## 🛠️ Como instalar o Ubuntu via PowerShell
+## ⏰ 5. Agendamento com `cron`
 
-### 1. 🚀 Ativar o WSL
-Abra o **PowerShell como administrador** e digite:
+- Usei o `crontab` para agendar tarefas automaticamente.
+- Aprendi a sintaxe:
+  ```bash
+  * * * * * comando
+  ```
+- Defini **frequência e horários** das execuções.
+- Consultei histórico e status das execuções programadas. 🕐📆
+
+---
+
+# 🧠 Preparando o Ambiente DevOps
+
+## 🖥️ 1. Oracle VirtualBox
+
+- Instalei o **VirtualBox** para rodar sistemas virtualizados.
+- Entendi como criar, ligar, desligar e gerenciar VMs. 🖲️💽
+
+## 🐧 2. Ubuntu Server LTS
+
+- Baixei a **ISO oficial do Ubuntu Server LTS**.
+- Ideal para simular **ambientes reais de produção**.
+- Seguro, estável e muito usado em servidores. 📡🛠️
+
+---
+
+## 🧩 Resumo
+
+💡 **Base sólida pronta** pra brincar, testar e ferrar tudo sem medo! Ambiente virtualizado = liberdade total + aprendizado garantido.
+
+---
+
+# 🧠 Usando Linux no Windows com WSL
+
+## ✅ O que é o WSL?
+
+- **Windows Subsystem for Linux**: roda distros Linux **dentro do Windows**.
+- Sem VM, sem dual boot. Leve, rápido e direto no terminal do Windows. ⚡
+
+## 🛠️ Instalando o Ubuntu via PowerShell
 
 ```powershell
 wsl --install
 ```
 
-> Isso instala o WSL 2 e baixa o Ubuntu automaticamente. Caso peça pra reiniciar, faça isso.
-
-### 2. 📥 Instalar o Ubuntu manualmente (caso precise)
-
-Se quiser instalar outra versão específica:
-
-```powershell
-wsl --install -d Ubuntu
-```
-
-Você também pode escolher outra distro com:
+- Ativa o WSL 2 e instala Ubuntu.
+- Pode escolher outras distros com:
 
 ```powershell
 wsl --list --online
@@ -104,108 +105,108 @@ wsl --list --online
 
 ---
 
-## 🐧 Usar o Ubuntu
+## 🐧 Usando o Ubuntu no WSL
 
-Depois da instalação:
-
-- Digite `wsl` ou `ubuntu` no menu Iniciar
-- Use o terminal normalmente como em qualquer Linux
-- Pode rodar comandos como `ls`, `cd`, `apt update`, `nano`, `bash`, etc.
+- Acesse pelo menu Iniciar com `wsl` ou `ubuntu`.
+- Roda comandos Linux normalmente: `ls`, `cd`, `nano`, `apt`, etc.
+- Ambiente perfeito para DevOps, scripts, Git, Docker e mais. 💻🐚
 
 ---
 
 ## 💡 Vantagens do WSL
 
-- Sem precisar de VM = menos peso na máquina 💨
-- Integração com arquivos do Windows (`/mnt/c/Users/SeuNome`)
-- Perfeito pra testar ShellScript, Git, Docker e ferramentas DevOps
+- Rápido e leve ⚙️
+- Integra com os arquivos do Windows (`/mnt/c/...`)
+- Ideal para testes e estudos sem VM.
 
 ---
 
-# 🧠 Revisão Compacta: Distros Linux Mais Comuns
-
-Conhecendo as distribuições Linux mais populares e suas principais características 👇
-
----
+# 🧠 Distros Linux Mais Comuns
 
 ## 🧱 Debian
-- 🔒 **Estável e confiável**: uma das distros mais antigas do mundo Linux
-- 💻 Suporte a várias arquiteturas (servidores, desktops, embarcados)
-- 🧰 Base para várias outras distros (inclusive o Ubuntu)
 
----
+- 🔐 Estável e confiável.
+- Suporte a várias arquiteturas.
+- Base para várias distros (ex: Ubuntu).
 
 ## 🟣 Ubuntu
-- 🙌 **Fácil de usar**: ideal pra quem está começando no Linux
-- 🧬 Derivado do Debian
-- 💻 Versões para desktop, servidores e IoT
-- 🔄 Atualizações regulares e vasto suporte da comunidade
 
----
+- 👶 Fácil pra iniciantes.
+- Baseado no Debian.
+- Tem versão Desktop, Server, IoT.
+- Amplo suporte da comunidade.
 
 ## 🍃 Linux Mint
-- 🖥️ Foco em notebooks e desktops
-- 👵 Interface tradicional e amigável (ótimo pra quem vem do Windows)
-- 🔧 Baseado no Ubuntu (herda estabilidade e compatibilidade)
 
----
+- 🖥️ Foco em usabilidade desktop.
+- Interface tradicional (ótima transição do Windows).
+- Baseado no Ubuntu.
 
 ## 🎩 Fedora
-- 🧪 **Inovação com estabilidade**: foco em tecnologias mais recentes
-- 💻 Usado em desktops, servidores, nuvem e IoT
-- 🔁 Atualizações frequentes, ideal pra quem quer estar na vanguarda
+
+- 🧪 Foco em inovação.
+- Atualizações frequentes.
+- Ideal pra quem curte o "estado-da-arte" do Linux.
 
 ---
 
-### 📝 Resumo Final
-Cada distro tem um foco:
-- **Debian** = estabilidade
-- **Ubuntu** = facilidade de uso
-- **Mint** = usabilidade em desktop
-- **Fedora** = inovação e tecnologias novas
+### 📝 Comparativo Final
+
+| Distro  | Foco Principal        |
+|---------|------------------------|
+| Debian  | Estabilidade 🧱        |
+| Ubuntu  | Facilidade de uso 🟣   |
+| Mint    | Usabilidade desktop 🍃 |
+| Fedora  | Inovação 🎩            |
 
 ---
 
-# 📚 Revisão Geral: Fundamentos de Sistemas e Linux
+# 📚 Fundamentos de Sistemas e Linux
 
-## ✅ O que aprendi
+## 💻 1. O que é um Sistema Operacional?
 
-### 💻 1. Papel do Sistema Operacional
-- O **sistema operacional** é o cérebro entre o hardware e o usuário.
-- Ele **gerencia os recursos** da máquina (CPU, memória, disco, dispositivos).
-- Sem ele, o hardware seria só um monte de metal inútil. 🧠⚙️
-
----
-
-### 🐧 2. Distribuições Linux
-- Existem **várias distros** Linux, cada uma com um foco diferente.
-- A escolha da distro depende do **caso de uso**:
-  - Servidores? Vai de Debian ou Ubuntu Server.
-  - Estudo e uso pessoal? Mint ou Ubuntu Desktop.
-  - Gosta de novidade? Fedora tá na área!
+- **Gerencia recursos**: memória, CPU, disco, dispositivos...
+- Intermediário entre o **hardware** e o **usuário**.
+- Sem ele, o PC seria só um peso de papel caro. 💀🧠
 
 ---
 
-### 🧪 3. Instalar SO em Máquina Virtual
-- Com o **Oracle VirtualBox**, dá pra criar um ambiente isolado e seguro.
-- Instalei o **Ubuntu Server** como exemplo.
-- Ideal pra **testes, estudos e experimentações**, sem risco de ferrar o PC real. 🧯💻
+## 🐧 2. Conhecendo as Distros
+
+- Cada distro tem um público/uso específico.
+  - **Servidor**: Ubuntu Server, Debian
+  - **Desktop**: Mint, Ubuntu Desktop
+  - **Testes/novidades**: Fedora
 
 ---
 
-### 🔐 4. Acesso remoto com SSH
-- **SSH (Secure Shell)** permite acessar outro computador/servidor pela rede.
-- Usado pra **administrar servidores** de forma segura.
-- Comandos básicos:
-  ```bash
-  ssh usuario@ip_do_servidor
-  ```
-- Prático, rápido e criptografado. 🛡️🔌
+## 🧪 3. Criando Máquinas Virtuais
+
+- Usei o **VirtualBox** pra criar ambientes de teste.
+- Instalei o **Ubuntu Server**.
+- Ambiente isolado, ideal pra praticar e aprender sem medo. 🔬🧱
 
 ---
 
-### 📌 Resumo Final
-- O que é um sistema operacional
-- Que existem várias distros Linux com usos específicos
-- Como criar um ambiente de testes com VM
-- E como acessar servidores de verdade com SSH
+## 🔐 4. Acesso remoto com SSH
+
+- **SSH (Secure Shell)**: login remoto seguro em servidores.
+- Comando básico:
+
+```bash
+ssh usuario@ip_do_servidor
+```
+
+- Totalmente criptografado. Fundamental pra administração remota. 🔐🌐
+
+---
+
+## 📌 Resumo Final
+
+✅ O que aprendi:
+- O papel do sistema operacional
+- As principais distros Linux
+- Como configurar ambientes virtuais com segurança
+- A usar SSH para gerenciar servidores remotamente
+
+---
