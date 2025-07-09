@@ -210,3 +210,154 @@ ssh usuario@ip_do_servidor
 - A usar SSH para gerenciar servidores remotamente
 
 ---
+
+# 🐧 Módulo 2: Explorando o Linux Server
+
+## 🔄 Verificando Atualizações
+
+- O Linux não força atualizações como o Windows. Você escolhe o que atualizar! 🧠
+- Para verificar atualizações disponíveis:
+  ```bash
+  sudo apt update
+  ```
+- Esse comando exige senha e mostra quais pacotes podem ser atualizados.
+- Para ver quais são atualizáveis:
+  ```bash
+  apt list --upgradable
+  ```
+
+---
+
+## 🛠️ Descobrindo Comandos com `help`
+
+- Use `help` ou `comando --help` para ver como um comando funciona.
+  ```bash
+  ls --help
+  ```
+- Shell CLI executa apenas comandos seguros e pré-configurados no sistema.
+
+---
+
+## 📁 Navegando e Gerenciando Diretórios
+
+### 📍 Onde estou?
+```bash
+pwd
+```
+- Exibe o caminho atual no sistema.
+
+### 📂 Listar arquivos e ocultos:
+```bash
+ls      # lista arquivos
+ls -a   # inclui arquivos ocultos (começam com ".")
+```
+
+### 📁 Criar novo diretório:
+```bash
+mkdir nome_do_diretorio
+```
+
+### 🚶 Navegar entre diretórios:
+```bash
+cd nome_do_diretorio    # entra na pasta
+cd                      # volta pra home
+```
+
+### 🧠 Dica: use as setas ↑ ↓ para navegar pelos comandos anteriores.
+
+---
+
+## 📝 Criando e Manipulando Arquivos
+
+### 🆕 Criar arquivos vazios:
+```bash
+touch nome.txt
+```
+
+### 🖊️ Adicionar conteúdo com `cat`:
+```bash
+cat > nome.txt
+```
+- Digite o conteúdo e finalize com `Ctrl + D`.
+
+### 👀 Ver conteúdo do arquivo:
+```bash
+cat nome.txt
+```
+
+### 🔊 Usar `echo` para mensagens:
+```bash
+echo "Hello world"
+```
+
+### ➕ Adicionar com `echo`:
+```bash
+echo "Novo conteúdo" > nome.txt  # sobrescreve
+```
+
+---
+
+## ✍️ Editor de Texto `nano`
+
+- Editor nativo do Linux CLI.
+- Instalar:
+  ```bash
+  sudo apt-get install nano
+  ```
+
+- Usar:
+  ```bash
+  nano nome_do_arquivo.txt
+  ```
+
+- Finalizar:
+  - `Ctrl + X` para sair
+  - `Y` para salvar
+  - Digite o nome do arquivo
+
+---
+
+## 📦 Compactar e Mover Arquivos
+
+### 📦 Compactar arquivos com `tar`:
+```bash
+tar -czf compactado.tar.gz arquivo1.txt arquivo2.txt
+```
+
+### 🚚 Mover com `mv`:
+```bash
+mv compactado.tar.gz /caminho/do/destino
+```
+
+### 🧹 Mover múltiplos arquivos compactando-os antes = mais agilidade!
+
+---
+
+## ❌ Deletar Arquivos e Diretórios
+
+### 🗑️ Remover arquivos:
+```bash
+rm nome.txt
+```
+
+### 🗑️ Remover diretório vazio:
+```bash
+rmdir pasta_vazia
+```
+
+### 🧨 Remover diretório com conteúdo:
+```bash
+rm -r pasta_com_arquivos
+```
+
+> ⚠️ Use com cuidado! Arquivos excluídos **não vão pra lixeira**!
+
+---
+
+## 🌳 Estrutura de Diretórios Linux
+
+- Sistema baseado em **estrutura hierárquica** (como uma árvore).
+- Cada diretório/pasta organiza melhor os dados e logs.
+- Facilita manutenção, acesso e segurança de aplicações.
+
+---
