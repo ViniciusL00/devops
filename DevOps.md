@@ -361,3 +361,139 @@ rm -r pasta_com_arquivos
 - Facilita manutenção, acesso e segurança de aplicações.
 
 ---
+
+# 🐚 Módulo 3: Shell Scripting no Linux
+
+Este módulo ensina como **automatizar tarefas** no Linux utilizando **scripts em Bash**. Aprendemos a criar, editar, executar scripts, além de usar condicionais, variáveis, compactação e passagem de parâmetros.
+
+---
+
+## 🚀 Automatização com Scripts
+
+### 🧠 O que é um script?
+- Um **roteiro de comandos** que executa automaticamente tarefas no terminal
+- Usa a linguagem **Bash**, comum no Linux
+
+### 🛠️ Vantagem
+- Automatiza processos repetitivos como backups
+- Agiliza a rotina de administração de sistemas
+
+---
+
+## 📦 Criando Script de Backup
+
+```bash
+#!/bin/bash
+
+diretorio_backup="/home/vinic/devops"
+nome_arquivo="backup_$(date +%Y%m%d_%H%M%S).tar.gz"
+
+tar -czf "$nome_arquivo" "$diretorio_backup"
+echo "Backup concluído em $nome_arquivo"
+```
+
+### 💡 Etapas
+1. `#!/bin/bash`: define o interpretador
+2. Variáveis armazenam diretório e nome do backup
+3. `tar -czf`: compacta os arquivos
+4. `echo`: informa sucesso
+
+### ✅ Execução
+```bash
+chmod +x backup.sh
+bash backup.sh
+```
+
+---
+
+## 🔁 Condicionais (if/elif/else)
+
+### ✅ Sintaxe:
+```bash
+if [ condição ]; then
+    comandos
+elif [ outra condição ]; then
+    comandos
+else
+    comandos
+fi
+```
+
+### 🔍 Exemplos de Testes:
+
+- Strings iguais: `[ "$a" = "$b" ]`
+- Strings diferentes: `[ "$a" != "$b" ]`
+- Números iguais: `[ "$a" -eq "$b" ]`
+- Maior/Menor: `[ "$a" -gt "$b" ]`, `[ "$a" -lt "$b" ]`
+- Arquivo existe: `[ -e "/caminho/arquivo" ]`
+
+> ⚠️ Sempre use espaços entre colchetes e variáveis!
+
+---
+
+## 📂 Script para Compactar Arquivos com Parâmetros
+
+### 🎯 Objetivo
+Permitir que a pessoa usuária escolha:
+- Nome do arquivo de saída
+- Quais arquivos devem ser compactados
+
+### 📜 Script:
+```bash
+#!/bin/bash
+
+if [ "$#" -lt 2 ]; then
+    echo "O programa, $0 requer nome do arquivo e arquivos a serem compactados"
+    exit 1
+fi
+
+arquivo_saida="$1"
+arquivos=("${@:2}")
+
+tar -czf "$arquivo_saida" "${arquivos[@]}"
+echo "Compactado com sucesso em $arquivo_saida"
+```
+
+### ⚙️ Execução
+```bash
+chmod +x compactador
+./compactador saida.tar.gz /home/vinic/devops
+```
+
+---
+
+## 📥 Passagem de Parâmetros
+
+### 📌 Conceito
+- Argumentos passados na execução do script
+- `$1`, `$2`, ..., `$@`: representam os parâmetros
+
+### 🧪 Exemplo:
+```bash
+#!/bin/bash
+
+if [ $# -ne 2 ]; then
+  echo "Erro! Nao foram fornecidos dois argumentos"
+  exit 1
+fi
+
+arg1=$1
+arg2=$2
+
+echo "O primeiro argumento é: $arg1"
+echo "O segundo argumento é: $arg2"
+```
+
+---
+
+## 🧠 Resumo Final
+
+✅ Automatizar tarefas com scripts Bash  
+✅ Usar condicionais com `if`, `elif`, `else`  
+✅ Passar parâmetros para tornar scripts reutilizáveis  
+✅ Compactar arquivos usando `tar` via script  
+✅ Organizar backups com timestamp automático
+
+---
+
+📌 **Dica prática:** sempre teste scripts em ambientes seguros antes de rodar em servidores de produção. Um erro num `rm -rf` pode ser catastrófico! ☠️💻
